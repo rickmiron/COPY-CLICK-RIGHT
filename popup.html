@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Extension</title>
+  <style>
+    body {
+      width: 300px;
+      height: 100px;
+    }
+    button {
+      width: 30%;
+      padding: 10px;
+    }
+    #links {
+      width: 296px;
+      height: 200px;
+      border: 1px solid #ccc;
+      padding: 2px;
+      font-family: monospace;
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Copia click derecho</h1>
+  <divo style="display:flex;align-items:center;zoom:1;">
+    <button id="elborra">borrar links</button>
+    <button id="elcopia">copia links</button>
+    <label style="padding-left:10px;" for="elcheck">COPY ON:</label> 
+    <input type="checkbox" style="width:30px;height:30px;" id="elcheck" >
+  </divo>
+  <textarea id="links" readonly></textarea>
+  <script src="popup.js"></script>
+</body>
+</html>
